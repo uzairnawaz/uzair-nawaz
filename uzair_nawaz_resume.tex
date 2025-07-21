@@ -1,0 +1,221 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\footskip}{4.1pt}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Uzair Nawaz} \\ \vspace{1pt}
+    \small 512-244-3928$|$ \href{mailto:uzair.nawaz@utexas.edu}{\underline{uzair.nawaz@utexas.edu}} $|$ 
+    \href{https://github.com/uzairnawaz}{\underline{github.com/uzairnawaz}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Texas at Austin}{Austin, TX}
+      {B.S. Computer Science Honors (Turing Scholar), GPA: 3.95/4.00}{Graduating Spring 2027}
+      \vspace{-2pt}\small{\item
+      \begin{tabularx}{0.97\textwidth}{p{1.6cm} X}
+        Courses: & Honors Algorithms, Honors Computer Security, Honors Operating Systems, Programming for Performance, Honors Computer Architecture, Data Structures, Linear Algebra, Probability and Statistics, Discrete Math\\
+      \end{tabularx}\vspace{-7pt}}
+  \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Python, Java, x86/ARM/RISC-V Assembly, Rust, Verilog, Bash, JavaScript, HTML/CSS, SQL} \\
+     \textbf{Tools}{: Git, CMake, Makefile, GDB, JIRA, Confluence, Unity Game Engine, Arduino Microcontroller} \\
+    }}\vspace{-4pt}
+ \end{itemize}
+  
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Google}{May 2025 -- Aug 2025}
+      {Associate Software Developer Intern - Compilers, Runtimes, and Toolchains Team}{Sunnyvale, CA}
+      \resumeItemListStart
+        \resumeItem{Contributed to LLVM-libc, an open-source standard library for C which is part of The LLVM Project.}
+        \resumeItem{Designed, implemented, and tested a system to perform conversion between character encodings in \textbf{C++}.}
+        \resumeItem{Contributed to the pthreads implementation, designing a reusable barrier for thread synchronization.}
+    \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {The University of Texas at Austin}{Jan 2025 -- May 2025}
+      {Undergraduate Teaching Assistant (CS 439: Operating Systems)}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Planned, graded, and answered questions related to programming assignments and quizzes for about 65 students.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Keysight Technologies}{May 2024 -- Aug 2024}
+      {Network Visibility Software Intern}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed a staged upgrade process for loading new software on network switches. Allowed network switches to remain online for a large part of the software upgrade process, decreasing downtime by about 40\%.}  
+        \resumeItem{Reorganized one-shot \textbf{Bash} upgrade scripts into logical stages that could be run independently.}
+        \resumeItem{Improved existing web GUI using ExtJS to display software installation status and future actions.} 
+        \resumeItem{Implemented new features to \textbf{Java} REST API, allowing users to trigger specific stages of the installation process.} 
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Institute for Computing in Research}{July 2022 -- Aug 2022}
+      {Research Intern}{Austin, TX}
+      \resumeItemListStart
+      \resumeItem{Worked with a mentor to create an n-body simulation in \textbf{Python} to predict the motion of gravitating particles.}
+        \resumeItem{Used matplotlib library to animate simulations either two- or three-dimensionally.}
+        \resumeItem{Performed benchmarks and generated plots to compare accuracy/efficiency of algorithms (Barnes-Hut vs $N^2$).}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{LDOS ML Compiler Research Project} $|$ \emph{Python, PyTorch, Triton, C, Linux Kernel}}{}
+          \resumeItemListStart
+          \resumeItem{Developed a process to compile PyTorch models using Triton and perform inference on them within the kernel.}
+          \resumeItem{Increased the feasability of using ML-based OS policies instead of the existing heuristic approaches.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Chess Engine} $|$ \emph{C++, Google Test}}{}
+          \resumeItemListStart
+            \resumeItem{Wrote a UCI-compatible chess engine that applies heuristics and alpha-beta pruning to choose the best move.}
+            \resumeItem{Represented the board as a collection of bitboards (64-bit integers with each bit representing a square), computing moves through efficient bitwise operations. Utilized Google Test framework to verify move generation.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Object-Oriented FUN Compiler} $|$ \emph{C++, ARM Assembly, Makefile}}{}
+          \resumeItemListStart
+            \resumeItem{Built compiler to translate a toy language to ARM assembly. Supports conditionals, loops, functions, and classes.}
+            \resumeItem{Implemented compile-time optimizations such as constant folding and tail call elimination by constructing an AST.}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Pipelined Processer} $|$ \emph{SystemVerilog}}{}
+          \resumeItemListStart
+            \resumeItem{Designed a 6-staged pipelined processor with an ISA that included branches, memory read/writes (including misaligned addresses), and arithmetic. Implemented a branch predictor to reduce pipeline flushes.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Network Card Driver} $|$ \emph{C++}}{}
+          \resumeItemListStart
+            \resumeItem{Implemented a driver for the E1000 family of network cards. Supported both transmitting and receiving.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Chip 8 Emulator} $|$ \emph{C++, SFML}}{}
+          \resumeItemListStart
+            \resumeItem{Created a Chip 8 interpreter. Supports arithmetic, memory read/write, branch, and graphics instructions.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
