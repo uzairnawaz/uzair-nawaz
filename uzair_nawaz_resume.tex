@@ -122,7 +122,7 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: C/C++, Python, Java, x86/ARM/RISC-V Assembly, Rust, Verilog, Bash, JavaScript, HTML/CSS, SQL} \\
+     \textbf{Languages}{: C/C++, Python, Java, OCaml, Rust, x86/ARM Assembly, Bash, JavaScript, HTML/CSS, SQL, Verilog} \\
      \textbf{Tools}{: Git, CMake, Makefile, GDB, JIRA, Confluence, Unity Game Engine, Arduino Microcontroller} \\
     }}\vspace{-4pt}
  \end{itemize}
@@ -130,6 +130,16 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
+    \resumeSubheading
+    {Jane Street}{May 2026 -- Aug 2026}
+      {Software Engineer Intern}{New York City, NY}
+      \resumeItemListStart
+      \resumeItem{ Redesigned software deployment system for trading servers, replacing an hourly polling job with a long-running service written in \textbf{OCaml} that continuously monitors fleet state and makes rollout decisions in real time. }
+        \resumeItem { Improved rollout scheduling by using server uptime/schedule data to trigger roll evaluations at optimal times instead of a fixed hourly cadence, increasing responsiveness of the deployment pipeline. }
+        \resumeItem { Decoupled deployment source-of-truth from the app's repo, eliminating rebuilds on every version change and reducing deployment time by 75\%.}
+    \resumeItemListEnd
+
+
     \resumeSubheading
     {The University of Texas at Austin}{Spring 2025 \& Fall 2025}
       {Undergraduate Teaching Assistant (CS 439: Operating Systems)}{Austin, TX}
@@ -167,14 +177,6 @@
         \resumeItem{Implemented new features to \textbf{Java} REST API, allowing users to trigger specific stages of the installation process.} 
       \resumeItemListEnd
       
-    \resumeSubheading
-      {Institute for Computing in Research}{July 2022 -- Aug 2022}
-      {Research Intern}{Austin, TX}
-      \resumeItemListStart
-      \resumeItem{Worked with a mentor to create an n-body simulation in \textbf{Python} to predict the motion of gravitating particles.}
-        \resumeItem{Used matplotlib library to animate simulations either two- or three-dimensionally.}
-        \resumeItem{Performed benchmarks and generated plots to compare accuracy/efficiency of algorithms (Barnes-Hut vs $N^2$).}
-      \resumeItemListEnd
   \resumeSubHeadingListEnd
   \vspace{-12pt}
 
@@ -208,13 +210,7 @@
           {\textbf{Network Card Driver} $|$ \emph{C++}}{}
           \resumeItemListStart
             \resumeItem{Implemented a driver for the E1000 family of network cards. Supported both transmitting and receiving.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Chip 8 Emulator} $|$ \emph{C++, SFML}}{}
-          \resumeItemListStart
-            \resumeItem{Created a Chip 8 interpreter. Supports arithmetic, memory read/write, branch, and graphics instructions.}
-          \resumeItemListEnd
-
+          \resumeItemListEnd 
     \resumeSubHeadingListEnd
 
 %-------------------------------------------
